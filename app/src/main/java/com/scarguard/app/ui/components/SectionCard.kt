@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 /**
- * The app's one card shape: a gentle tonal lift plus a hairline outline, so panels stay legible
- * against the dark background without a heavy drop shadow.
+ * The app's one card shape: a flat near-black surface with a crisp hairline border -- no drop
+ * shadow or tonal wash, matching a dashboard/site look rather than Material's default elevation.
  */
 @Composable
 fun SectionCard(
@@ -25,9 +25,9 @@ fun SectionCard(
     Card(
         modifier = modifier.fillMaxWidth(),
         shape = MaterialTheme.shapes.large,
-        colors = CardDefaults.cardColors(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.35f)),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
     ) {
         Column(modifier = Modifier.padding(contentPadding), content = content)
     }

@@ -175,6 +175,10 @@ private fun StatTile(label: String, value: String, modifier: Modifier = Modifier
     SectionCard(modifier = modifier, contentPadding = androidx.compose.foundation.layout.PaddingValues(14.dp)) {
         Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
         Spacer(Modifier.height(4.dp))
-        Text(value, style = MaterialTheme.typography.titleLarge)
+        Text(
+            value,
+            style = MaterialTheme.typography.titleLarge,
+            fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
+        )
     }
 }
