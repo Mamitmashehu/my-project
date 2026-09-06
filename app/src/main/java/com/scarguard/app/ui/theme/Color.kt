@@ -14,6 +14,10 @@ val Mist = Color(0xFFF4F8F8)
 val Cloud = Color(0xFFFFFFFF)
 val Line = Color(0xFFE1E9E9)
 
+// Light theme: pure white page, a clearly-gray box tone for cards, teal for actions.
+val BoxGray = Color(0xFFEDEDF1)
+val BoxBorder = Color(0xFFDBDBE1)
+
 val RiskNormal = Color(0xFF2E9E5B)
 val RiskNormalContainer = Color(0xFFDDF3E4)
 val RiskWatch = Color(0xFFB9770E)

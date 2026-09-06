@@ -11,13 +11,16 @@ private val LightColors = lightColorScheme(
     onPrimary = Cloud,
     primaryContainer = TealContainerLight,
     onPrimaryContainer = TealPrimary,
-    background = Mist,
+    background = Cloud,
     onBackground = Ink,
-    surface = Cloud,
+    surface = BoxGray,
     onSurface = Ink,
-    surfaceVariant = Mist,
+    surfaceVariant = BoxGray,
     onSurfaceVariant = Slate,
-    outline = Line,
+    outline = BoxBorder,
+    // Prevent Material3 from tinting elevated surfaces with `primary` -- keeps the gray boxes a
+    // clean neutral gray instead of picking up a teal wash at higher elevations.
+    surfaceTint = Color.Transparent,
     error = RiskAlert,
     onError = Cloud,
     errorContainer = RiskAlertContainer,
@@ -43,12 +46,12 @@ private val DarkColors = darkColorScheme(
 )
 
 /**
- * The app defaults to a dark theme regardless of the system setting -- pass `darkTheme = false`
- * explicitly if you ever want to offer a light mode toggle.
+ * The app defaults to this light theme regardless of the system setting -- pass
+ * `darkTheme = true` explicitly if you ever want to offer a dark mode toggle.
  */
 @Composable
 fun ScarGuardTheme(
-    darkTheme: Boolean = true,
+    darkTheme: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colors = if (darkTheme) DarkColors else LightColors
