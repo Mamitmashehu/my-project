@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
 
 private val LightColors = lightColorScheme(
     primary = TealPrimary,
-    onPrimary = TealOnPrimary,
+    onPrimary = Cloud,
     primaryContainer = TealContainerLight,
     onPrimaryContainer = TealPrimary,
     background = Mist,
@@ -25,20 +25,17 @@ private val LightColors = lightColorScheme(
 )
 
 private val DarkColors = darkColorScheme(
-    primary = TealPrimary,
-    onPrimary = TealOnPrimary,
+    primary = TealPrimaryDark,
+    onPrimary = Color(0xFF00201F),
     primaryContainer = TealContainerDark,
-    onPrimaryContainer = TealPrimary,
-    background = PureBlack,
-    onBackground = TextPrimary,
-    surface = NearBlackSurface,
-    onSurface = TextPrimary,
-    surfaceVariant = NearBlackSurface,
-    onSurfaceVariant = TextSecondary,
-    outline = HairlineBorder,
-    // Material3 normally tints elevated surfaces with `primary`; on a true-black canvas that
-    // reads as a muddy wash, so it's switched off in favor of flat surfaces + hairline borders.
-    surfaceTint = Color.Transparent,
+    onPrimaryContainer = TealPrimaryDark,
+    background = DarkSurface,
+    onBackground = Cloud,
+    surface = DarkSurfaceVariant,
+    onSurface = Cloud,
+    surfaceVariant = DarkSurfaceVariant,
+    onSurfaceVariant = Color(0xFFB6C4C4),
+    outline = Color(0xFF3A4649),
     error = Color(0xFFFFB4AB),
     onError = Color(0xFF690005),
     errorContainer = Color(0xFF93000A),
