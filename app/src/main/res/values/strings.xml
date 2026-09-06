@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScarGuard</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_connect">Device</string>
+    <string name="nav_baseline">Baseline</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+    <string name="monitoring_channel_name">Wound Monitoring</string>
+    <string name="monitoring_channel_desc">Ongoing temperature monitoring from the connected sensor</string>
+    <string name="alert_channel_name">Infection Risk Alerts</string>
+    <string name="alert_channel_desc">Warnings when temperature or redness cross safe limits</string>
+</resources>

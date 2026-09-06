@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Warning triangle with an exclamation mark, alpha-masked by the system like any small icon. -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,3 L22,20 H2 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11.1,10 H12.9 L12.5,15.5 H11.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11.3,17 H12.7 V18.4 H11.3 Z" />
+</vector>

@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple shield + pulse mark, flat single-color for adaptive icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 L78,30 V54 C78,72 68,84 54,90 C40,84 30,72 30,54 V30 Z" />
+    <path
+        android:fillColor="#0F7C7C"
+        android:pathData="M38,58 H48 L52,48 L58,68 L62,58 H70"
+        android:strokeColor="#0F7C7C"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
